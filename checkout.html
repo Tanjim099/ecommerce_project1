@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="logo">
+                <h1><a href="index.html">LOGO</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="megamenuparent"><a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                        <div class="megamenu">
+                            <div class="items">
+                                <h3>Man Fashion</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <h3>Woman Fashion</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <h3>Beauty Product</h3>
+                                <ul>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                    <li><a href="#">item 1</a></li>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <img src="img1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="megamenu_news_parent"><a href="#">News<i class="fa fa-caret-down"></i></a>
+                        <div class=" megamenu_news">
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                            <div class="items">
+                                <img src="img2.png" alt="">
+                                <h3>Product 1</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="icon">
+                <i class="fa fa-search" id="search-btn"></i>
+                <i class='fa fa-user' id="userbtn"></i>
+                <i class="fa fa-heart"></i>
+                <i class='fa fa-shopping-cart' id="cart"><span id="Shop_cart">0</span></i>
+            </div> -->
+        </div>
+    </header>
+    <section>
+        <div id="checkout_section">
+            <div id="left_checkout_box">
+                <h2>BILLING ADDRESS</h2>
+                <form action="" id="billing_address">
+                    <div>
+                        <label for="">Full name</label>
+                        <input type="text" placeholder="enter name">
+                    </div>
+                    <div>
+                        <label for="">Email Id</label>
+                        <input type="email" placeholder="enter email">
+                    </div>
+                    <div>
+                        <label for="">Phone Number</label>
+                        <input type="number" placeholder="enter phone number">
+                    </div>
+                    <div>
+                        <label for="">Address</label>
+                        <input type="text" placeholder="enter address">
+                    </div>
+                    <div>
+                        <label for="">City</label>
+                        <input type="text" placeholder="enter city">
+                    </div>
+                    <div id="state_select">
+                        <select name="" id="">
+                            <option value="">Select State</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="UP">UP</option>
+                            <option value="Bihar">Bihar</option>
+                        </select>
+                        <input type="number" placeholder="enter pincode">
+                    </div>
+                </form>
+            </div>
+            <div id="right_checkout_box">
+                <h2>Payment</h2>
+                <form action="" id="payment_process">
+                    <div>
+                        <p>Accepted Card</p>
+                        <img src="https://cdn.myshoptet.com/usr/www.led-grower.eu/user/documents/upload/img/logo-platebni-karty.png" alt="">
+                    </div>
+                    <div>
+                        <label for="">Card Number</label>
+                        <input type="number" placeholder="enter card number">
+                    </div>
+                    <div>
+                        <label for="">Exp Month</label>
+                        <input type="number" placeholder="enter exp month">
+                    </div>
+                    <div id="year_select">
+                        <select name="" id="">
+                            <option value="">Select Year</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                        </select>
+                        <input type="number" placeholder="enter CVV">
+                    </div>
+                    <button id="checkout_submitbtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

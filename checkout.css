@@ -1,0 +1,59 @@
+#checkout_section{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    gap: 150px;
+    padding: 20px;
+}
+
+#left_checkout_box{
+}
+#billing_address{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#billing_address div{
+    display: flex;
+    flex-direction: column;
+}
+#billing_address div input{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#payment_process{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#payment_process div{
+    display: flex;
+    flex-direction: column;
+}
+#payment_process div input{
+    padding:10px;
+    outline: none;
+    border-radius: 5px;
+}
+#payment_process div img{
+    width: 130px;
+}
+
+#state_select{
+    gap: 10px;
+}
+
+#year_select{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+#checkout_submitbtn{
+    padding: 10px;
+    background-color: orangered;
+}

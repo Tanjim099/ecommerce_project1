@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login Page</title>
+    <style>
+        #admin_login_box{
+            width: 50%;
+            margin: auto;
+            margin-top: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #admin_login_form{
+            width: 300px;
+            /* background-color: aqua; */
+            border: 1px solid black;
+            padding: 30px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        #admin_login_form div{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+        }
+        #admin_login_form div input{
+            width: 95%;
+            padding: 7px;
+        }
+        #admin_login_form button{
+            padding: 7px;
+            background-color: orangered;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="admin_login_box">
+        <form action="" id="admin_login_form">
+            <div>
+                <label for="">Username or Email Address</label>
+                <input id="admin_login_email" type="text" placeholder="enter email...">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input id="admin_login_pass" type="password" placeholder="enter password...">
+            </div>
+            <p id="error"></p>
+            <button id="admin_login_btn">Login</button>
+        </form>
+    </div>
+    <script>
+        const adminLoginBtn = document.getElementById("admin_login_btn");
+        adminLoginBtn.addEventListener("click", (e)=>{
+            e.preventDefault();
+            const adminEmail = document.getElementById("admin_login_email").value;
+            const adminPass = document.getElementById("admin_login_pass").value;
+            const error = document.getElementById("error");
+            if(adminEmail == "" && adminPass == ""){
+                error.innerText = "Please enter first email and password";
+            }
+            else if(adminEmail == "tanjim@gmail.com" && adminPass == ""){
+                error.innerText = "Please enter correct password";
+            }
+            else if(adminEmail == "tanjim@gmail.com" && adminPass == "8252"){
+                location = "dashboard.html";
+            }
+        })
+    </script>
+</body>
+</html>
